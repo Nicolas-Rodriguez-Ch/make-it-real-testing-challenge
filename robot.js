@@ -20,7 +20,7 @@ exports.createRobot = (a, b) => {
     function turnRight() {
         // función para girar a la derecha
         try {
-            if (y <= 10) {
+            if (y < 10) {
                 y += 1;
                 orientation = 'E';
             }
@@ -32,7 +32,7 @@ exports.createRobot = (a, b) => {
     function turnLeft() {
       // función para girar a la izquierda
       try {
-          if (y >= 0 ) {
+          if (y > 0 ) {
               y -= 1;
               orientation = 'W';
             }
